@@ -1,13 +1,12 @@
-import { data } from "../../result.js"
-import "./Featured.css"
-import Chart from "../Chart/Chart"
-import Bigchart from "../Bigchart"
-import Piechart from "../Piechart"
+import { data } from "../../result.js";
+import "./Featured.css";
+import Chart from "../Chart/Chart";
+import Bigchart from "../Bigchart";
+import Piechart from "../Piechart";
 
 function Featured() {
   return (
     <div className="featured">
-      
       <div className="featuredpiechart">
         <Piechart
           data={data}
@@ -25,7 +24,7 @@ function Featured() {
         title="Product Availability and Requirements"
         grid
       />
-      <div className="featuredItem">
+      {/* <div className="featuredItem">
         <div className="widgetsm">
           <Chart
             data={data}
@@ -58,9 +57,9 @@ function Featured() {
             defaultValue={data[0]}
           />
         </div>
-      </div>
+      </div> */}
     </div>
-  )
+  );
 }
 
-export default Featured
+export default Featured;
